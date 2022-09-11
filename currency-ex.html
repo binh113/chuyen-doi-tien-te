@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>amount</td>
+        <td>From currency</td>
+        <td>To currency</td>
+    </tr>
+    <tr>
+        <td><label for="amount"></label><input type="text" id="amount"></td>
+        <td><label>
+            <select id="form">
+                <option value="dong">dong</option>
+                <option value="usd">usd</option>
+            </select>
+        </label></td>
+        <td><label>
+            <select id="to">
+                <option value="usd">usd</option>
+                <option value="dong">dong</option>
+            </select>
+        </label></td>
+        <td>
+            <button type="button" onclick="changeMoney()">Convert</button>
+        </td>
+    </tr>
+</table>
+<p id="result"></p>
+<script src="currency-ex.js"></script>
+</body>
+</html>
